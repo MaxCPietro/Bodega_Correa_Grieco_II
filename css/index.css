@@ -42,8 +42,39 @@ strong {
 }*/
 
 /*2 - Clases que aplican a toda la página*/
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--gris_claro);
+    padding: 1vw;
+    border: 1px solid var(--lila_oscuro);
+}
 
+/*3 - CSS Header*/
+header {
+    position: sticky;
+    top: 0;
+    background-color: red;
+    padding: 1vw;
+    border: 2px solid yellow;
+}
+.stickyBanner {
+    position: sticky;
+    top: 0;
+    background-color: var(--gris_claro);
+    padding: 1vw;
+    border: 1px solid var(--lila_oscuro);
+}
 
+.bannerPpal {
+    position: sticky;
+    top: 0;
+    background-color: green;
+    padding: 1vw;
+    border: 2px solid white;
+}
 
 /*4 - CSS SECCION 1 - Carousel*/
 .seccion1{

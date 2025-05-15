@@ -1,19 +1,16 @@
-# CaC NodeJS Comisión 24142 - Grupo 1
-
-Este proyecto es una página y sistema web de la __bodega y distribudiora de vinos__ _Vientos de Altura_.
+# C25015 - Front-End JS 
+## Página con fines educativos
+Esta página será una tienda comercial (e-comerce) de la __bodega Correa Grieco__
 
 ## Tabla de Contenidos
 
-- [Integrantes del Equipo](#integrantes-del-equipo)
+- [Autor](#integrantes-del-equipo)
 - [Contenido del Site](#contenido-del-site)
 - [Especificaciones Técnicas](#especificaciones-técnicas)
 - [Sitio Web](#sitio-web)
 
-## Integrantes del Equipo
-
-* Benavidez, Fernando | benavidez.fernando@hotmail.com
+## Autor
 * Correa Pietrobón, Alberto Maximiliano | maxcorrea81@outlook.com
-* Perez, Juan Cruz | juanceprez@gmail.com 
 
 ## Contenido del Site
 ### Front-end
@@ -24,11 +21,10 @@ Este proyecto es una página y sistema web de la __bodega y distribudiora de vin
 5. Contacto: Formulario de contacto.
 6. Ubicación: Frames con las locaciones de la empresa tanto en Buenos Aires como en Mendoza.
 
-### Back-end
-*falta*
-
 ## Especificaciones Técnicas.
 ### Front-end
+* Index con Header, Menú y Footer. Se trabajó mucho con los conceptos de position
+* --
 * Header y Footer con bootstrap.
 * Carrusel hecho con animación en CSS.
 * Flex-box CSS para presentación de los productos y clientes.
@@ -38,12 +34,7 @@ Este proyecto es una página y sistema web de la __bodega y distribudiora de vin
 * Iframes con hipervículos con google maps.
 * script insertado en el index para validar la edad previo al ingreso al sitio.
 
-### Back-end
-*falta*
 
 ## Sitio web
 ### Front-end
 [Bodega y Distribuidora Vientos de Altura](https://maxcpietro.github.io/Distibuidora_de_Vino/pages/productos.html)
-
-### Back-end
-*falta*
