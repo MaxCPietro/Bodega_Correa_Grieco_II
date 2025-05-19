@@ -23,7 +23,7 @@ Esta página será una tienda comercial (e-comerce) de la __bodega Correa Grieco
 
 ## Especificaciones Técnicas.
 ### Front-end
-* Index con Header, Menú y Footer. Se trabajó mucho con los conceptos de position
+* Index con Header, Menú y Footer. Se trabajó mucho con los conceptos de position y medidas absolutas y relativas
 * --
 * Header y Footer con bootstrap.
 * Carrusel hecho con animación en CSS.
