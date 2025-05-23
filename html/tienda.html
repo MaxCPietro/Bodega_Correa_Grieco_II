@@ -1,44 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PRODUCTOS</title>
+    <title>Productos</title>
     <link rel="icon" href="../img/logos/wine-glass.svg" />
-    <!--Google Fonts-->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!--font-family: 'Quicksand' & Roboto-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:wght@100;300;400;500;700;900&family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <!--Montserrat-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/main.css" />
-    <script
-      src="https://kit.fontawesome.com/bf609d073d.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/tienda.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+  </head>
   <body>
-        <header>
-      <div class= "menu">
+    <header>
+      <div class="menu">
         <nav>
           <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="./quienessomos.html">Quienes Somos</a></li>
-            <li><a href="./clientes.html">Clientes</a></li>
             <li><a href="./tienda.html">Tienda</a></li>
             <li><a href="./contacto.html">Contacto</a></li>
             <li><a href="./ubicacion.html">Ubicación</a></li>
@@ -46,114 +34,53 @@
         </nav>
       </div>
     </header>
+
     <main>
-      <section class="container seccion2 productos" id="productos">
-        <!--h1 class="text-center">Productos</h1-->
-        <h2 class="text-center">
-          Te invitamos a conocer nuestros mejores vinos
-        </h2>
-        <div class="row justify-content-center">
-          <!-- Producto 1 -->
-          <div class="col-md-4">
-            <div class="caja p-3">
-              <img
-                class="item img-fluid"
-                src="../img/Productos/malbec_300px.png"
-                alt="cabarceno750"
-              />
-              <h4 class="item">Reserva Malbec</h4>
-              <p class="item productoDescripcion">
-                Malbec de guarda en barrica de roble francés. Para exigentes
-              </p>
-            </div>
+      <section class="productos">
+        <h2>Te invitamos a conocer nuestros mejores vinos</h2>
+        <div class="grid-productos">
+          <div class="caja">
+            <img src="../img/Productos/malbec_300px.png" alt="Reserva Malbec" class="item" />
+            <h4>Reserva Malbec</h4>
+            <p class="productoDescripcion">Malbec de guarda en barrica de roble francés. Para exigentes</p>
           </div>
-          <!-- Producto 2 -->
-          <div class="col-md-4">
-            <div class="caja p-3">
-              <img
-                class="item img-fluid"
-                src="../img/Productos/sparkling_300px.png"
-                alt="cabarceno1125"
-              />
-              <h4 class="item">Sparking Wine</h4>
-              <p class="item productoDescripcion">
-                Exquisito vino espumante para compartir de 2
-              </p>
-            </div>
+
+          <div class="caja">
+            <img src="../img/Productos/sparkling_300px.png" alt="Sparkling Wine" class="item" />
+            <h4>Sparkling Wine</h4>
+            <p class="productoDescripcion">Exquisito vino espumante para compartir de 2</p>
           </div>
-          <!-- Producto 3 -->
-          <div class="col-md-4">
-            <div class="caja p-3">
-              <img
-                class="item img-fluid"
-                src="../img/Productos/buenosAires_300px.png"
-                alt="cabarceno3000"
-              />
-              <h4 class="item">Buenos Aires</h4>
-              <p class="item productoDescripcion">
-                Ideal para Comer asados y acompañar un abrazo
-              </p>
-            </div>
+
+          <div class="caja">
+            <img src="../img/Productos/buenosAires_300px.png" alt="Buenos Aires" class="item" />
+            <h4>Buenos Aires</h4>
+            <p class="productoDescripcion">Ideal para comer asados y acompañar un abrazo</p>
           </div>
-          <!-- Producto 4 -->
-          <div class="col-md-4">
-            <div class="caja p-3">
-              <img
-                class="item img-fluid"
-                src="../img/Productos/tango_300px.png"
-                alt="producto4"
-              />
-              <h4 class="item">Tango - 2x4</h4>
-              <p class="item productoDescripcion">
-                En sus variedades Malbec, Cabernet Sauvignon y Chardonnay
-              </p>
-            </div>
+
+          <div class="caja">
+            <img src="../img/Productos/tango_300px.png" alt="Tango - 2x4" class="item" />
+            <h4>Tango - 2x4</h4>
+            <p class="productoDescripcion">Malbec, Cabernet Sauvignon y Chardonnay</p>
           </div>
-          <!-- Producto 5 -->
-          <div class="col-md-4">
-            <div class="caja p-3">
-              <img
-                class="item img-fluid"
-                src="../img/Productos/Tardia_300.png"
-                alt="producto5"
-              />
-              <h4 class="item">Cosecha Tardía</h4>
-              <p class="item productoDescripcion">
-                Expectacular vino licoroso para postres y sobremesas
-              </p>
-            </div>
+
+          <div class="caja">
+            <img src="../img/Productos/Tardia_300.png" alt="Cosecha Tardía" class="item" />
+            <h4>Cosecha Tardía</h4>
+            <p class="productoDescripcion">Espectacular vino licoroso para postres y sobremesas</p>
           </div>
-          <!-- Producto 6 -->
-          <div class="col-md-4">
-            <div class="caja p-3">
-              <img
-                class="item img-fluid"
-                src="../img/Productos/candy.png"
-                alt="producto6"
-              />
-              <h4 class="item">Cosecha Anticipada - Candy</h4>
-              <p class="item productoDescripcion">
-                Menos concentración de alcohol y frescura para tus noches
-              </p>
-            </div>
+
+          <div class="caja">
+            <img src="../img/Productos/candy.png" alt="Cosecha Anticipada - Candy" class="item" />
+            <h4>Cosecha Anticipada - Candy</h4>
+            <p class="productoDescripcion">Menor concentración de alcohol y frescura para tus noches</p>
           </div>
         </div>
       </section>
     </main>
+
     <footer>
       <div class="footer">
         <p>© 2025 Bodega Correa Grieco. Todos los derechos reservados.</p>
       </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
   </body>
-</html>
