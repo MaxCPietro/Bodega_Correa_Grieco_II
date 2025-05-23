@@ -1,4 +1,10 @@
 /*9 - CSS Seccion 5 - Ubicacion*/
+ h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem;
+}
 
 .ubicacion {
     border: none;

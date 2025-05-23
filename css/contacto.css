@@ -1,5 +1,13 @@
 
 /*9 - CSS Seccion 6 - Contacto*/
+
+ h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem;
+}
+
 .contacto{
     display: flex;
     flex-wrap: nowrap;
