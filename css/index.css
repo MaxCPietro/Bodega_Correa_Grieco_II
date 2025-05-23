@@ -1,119 +1,123 @@
+/* VARIABLES GENERALES */
 :root {
-    width: 100vw;
-    height: 100vh;
-    background-color: #a31515;
+  --lila_claro: #a31515;
+  --lila_oscuro: #7a0e0e;
+  --gris_claro: #f8f8f8;
 }
 
+/* BANNER SUPERIOR */
 .AbsoluteBanner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--lila_claro);
-    padding: 0,5em;
-    background-color: var(--gris_claro);
-    z-index: 9999;
-    height: 2em;
-    text-align: middle; /* Para que quede arriba de todo */
-    /*border: 1px solid lime*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5em;
+  background-color: var(--gris_claro);
+  color: var(--lila_claro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  z-index: 999;
+  padding: 0 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .scrolling-text {
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    white-space: nowrap;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1em;
-    text-align: center;
-    animation: scroll-left 20s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll-left 20s linear infinite;
 }
 
 @keyframes scroll-left {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-.BannerPpal {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../img/provincia-mendoza.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* HERO IMAGE */
+.hero {
+  margin-top: 2.5em;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ENCABEZADO */
+.main-header {
+  background-color: white;
+  padding-top: 4em;
+  padding-bottom: 1em;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .NombreBodega {
-    position: relative;
-    top: 8vw;
-    left: 0;
-    width: 100%;
-    font-family: 'Quicksand', sans-serif;   
-    font-size: 3.5em;
-    font-weight: 600;
-    text-align: center;
-    color: var(--lila_oscuro);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3.5em;
+  font-weight: 700;
+  color: var(--lila_oscuro);
+  margin-bottom: 0.2em;
 }
 
 .slogan {
-    position: relative;
-    top: 9vw;
-    left: 0;
-    width: 100%;
-    font-family: "Quicksand", sans-serif;
-    font-size: 1.5em;
-    font-weight: 300;
-    text-align: center;
-    color: var(--lila_oscuro);
-    border: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: var(--lila_oscuro);
 }
 
-.menu {
-    position: relative;
-    top: -27vw;
-    left: 0;
-    background-color: #f8f8f8; /* o var(--gris_claro) */
-    padding: 1.5vw;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 2vw auto;
-    width: fit-content;
-    max-width: 90%;
+/* MENÚ DE NAVEGACIÓN */
+.main-nav {
+  background-color: var(--gris_claro);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-top: 1.5em;
 }
 
-.menu ul {
-    display: flex;
-    gap: 1.5vw;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0.8em 0;
+  gap: 1.5em;
+  margin: 0;
 }
 
-.menu li {
-    background-color: #7a0e0e; /* vino tinto */
-    border-radius: 8px;
-    transition: background-color 0.3s, transform 0.2s;
+.main-nav li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--lila_oscuro);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.menu li:hover {
-    background-color: #a31515;
-    transform: scale(1.05);
+.main-nav li a:hover,
+.main-nav li a.active {
+  background-color: var(--lila_claro);
+  transform: scale(1.05);
 }
 
-.menu a {
-    display: block;
-    padding: 0.8em 1.2em;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
+/* PIE DE PÁGINA */
+footer {
+  background-color: var(--gris_claro);
+  padding: 1.5em 0;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.9em;
+  color: #444;
 }
