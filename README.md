@@ -29,4 +29,4 @@ Esta página será una tienda comercial (e-comerce) de la __bodega Correa Grieco
 
 
 ## Sitio web
-[Bodega y Distribuidora Vientos de Altura](hhttps://maxcpietro.github.io/Bodega_Correa_Grieco_II/)
+[Bodega Correa Grieco](hhttps://maxcpietro.github.io/Bodega_Correa_Grieco_II/)
