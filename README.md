@@ -29,5 +29,5 @@ Esta página será una tienda comercial (e-comerce) de la __bodega Correa Grieco
 
 
 ## Sitio web
-[Bodega Correa Grieco en GithutPages](https://maxcpietro.github.io/Bodega_Correa_Grieco_II/)
-[Bodega Correa Grieco en Netlify](https:/https://bodegacorreagrieco2.netlify.app/)
+* [Bodega Correa Grieco en GithutPages](https://maxcpietro.github.io/Bodega_Correa_Grieco_II/)
+* [Bodega Correa Grieco en Netlify](https:/https://bodegacorreagrieco2.netlify.app/)

@@ -1,48 +1,192 @@
-/*9 - CSS Seccion 5 - Ubicacion*/
- h2 {
-  text-align: center;
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff8f3;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* HEADER */
+header {
+  background-color: #5a2d0c;
+  padding: 1rem 1.5rem;
+  position: relative;
+  z-index: 1000;
+}
+
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Checkbox oculto para toggle */
+#menu-toggle {
+  display: none;
+}
+
+/* Botón hamburguesa */
+.menu-toggle-label {
+  display: none;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1100;
+}
+.menu-toggle-label span,
+.menu-toggle-label span::before,
+.menu-toggle-label span::after {
+  display: block;
+  background-color: #fff;
+  height: 3px;
+  border-radius: 2px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.menu-toggle-label span {
+  width: 100%;
+  position: relative;
+}
+.menu-toggle-label span::before,
+.menu-toggle-label span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.menu-toggle-label span::before {
+  top: -8px;
+}
+.menu-toggle-label span::after {
+  bottom: -8px;
+}
+
+/* Navegación */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+  display: block;
+  white-space: nowrap;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #7a3e18;
+  outline: none;
+}
+
+/* Media Query móviles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background-color: #5a2d0c;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 220px;
+    padding: 1rem 0;
+    display: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  /* Mostrar menú cuando el checkbox está activo */
+  #menu-toggle:checked + .menu-toggle-label + nav ul {
+    display: flex;
+  }
+
+  .menu-toggle-label {
+    display: block;
+  }
+}
+
+/* MAIN */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.ubicacion h2 {
   font-size: 2rem;
-  font-weight: 300;
-  padding: 1rem;
+  color: #5a2d0c;
+  margin-bottom: 1rem;
+  text-align: center;
 }
-
-.ubicacion {
-    border: none;
-}
-.ubicacion h1  {
-    color: var(--lila_oscuro);
-    font-size: 2vw;
-    padding: 0px 5vw 0px 5vw;
-}
-
-.ubicacion h3 {
-    color: var(--lila_claro);
-    font-size: 1vw;
-    padding: 0px 5vw 0px 5vw;
+.ubicacion p {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.6;
 }
 
 .mapaContainer {
-    margin: 0px 5vw 0px 5vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
-    align-content: center;
-    gap: 10px;
-    padding: 3vw;
-    
-}
-.mapa {
-    /*border : 0.3vw solid green;*/
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10px 30px 10px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.mapaMendoza {
-    /*border : 0.3vw solid orange;*/
-    align-self: flex-start;
-    width: 20vw;
-    height: 20vw;
-    border-radius: 10px 30px 10px 30px;         
+.mapaContainer img.mapaMendoza {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.mapaContainer iframe.mapa {
+  flex: 1 1 300px;
+  min-width: 300px;
+  max-width: 500px;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+  background-color: #5a2d0c;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive typography */
+@media (max-width: 480px) {
+  .ubicacion h2 {
+    font-size: 1.5rem;
+  }
+  .ubicacion p {
+    font-size: 1rem;
+  }
+  .mapaContainer iframe.mapa {
+    height: 200px;
+  }
+  
 }

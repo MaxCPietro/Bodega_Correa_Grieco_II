@@ -60,3 +60,57 @@ main {
     line-height: 1.6;
     margin-bottom: 1em;
 }
+
+.resenas-clientes {
+  padding: 4rem 1rem;
+  background-color: #f8f4f1;
+  text-align: center;
+}
+
+.resenas-clientes h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--color-secundario, #5a2d0c);
+}
+
+.grid-resenas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .grid-resenas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-resenas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.resena {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-family: 'Quicksand', sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.resena p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.resena h4 {
+  font-weight: 600;
+  color: #7a3e18;
+}

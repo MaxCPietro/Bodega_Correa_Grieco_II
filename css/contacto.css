@@ -1,104 +1,148 @@
+/* contacto.css */
 
-/*9 - CSS Seccion 6 - Contacto*/
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f3;
+  color: #333;
+}
 
-h2 {
+header {
+  background-color: #5a2d0c;
+  padding: 1rem 0;
+}
+
+.menu nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+}
+
+.menu nav ul li a:hover {
+  background-color: #7a3e18;
+  border-radius: 5px;
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contacto {
   text-align: center;
-  font-size: 2rem;
-  font-weight: 300;
-  padding: 1rem;
 }
 
-.contacto{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    background-color: var(--gris_claro);
-    border: none;
-    width: 100%;
+.contactotitulo h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  color: #5a2d0c;
+  margin-bottom: 1rem;
 }
 
-
-.contacto h1  {
-    color: var(--lila_oscuro);
-    font-size: 2vw;
-    padding: 0px 5vw 0px 5vw;
-}
-
-.contacto h3 {
-    color: var(--lila_claro);
-    font-size: 1vw;
-    padding: 0px 5vw 0px 5vw;
-}
-
-.formContainer {
-    
-    margin-top: 2vw;
-    display: flex;
-}
-.contactForm {
-
-    width: 40vw;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: var(--gris_oscuro);
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 1px;
-    color: var(--lila_claro);
-    font-size: 15px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    color: var(--lila_claro);
-    border-radius: 5px;
-  }
-  
-  input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    background-color: #4caf50;
-    color: white;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-
-.contactForm select {
-    display: inline;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1vw;
-    background-color: var(--ColorBackgroundGris);
-    padding: 0.2vw;
-}
-
-.contactForm input[type="checkbox"],
-.contactForm input[type="checkbox"] + label {
-    display: inline; 
-    font-size: 1vw;
+.contactotitulo h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  padding: 0 1rem;
 }
 
 .imgContacto {
-    /*border: #1395BA 0.5vw solid;*/
-    width: 50vw;
-    align-self: self-end;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
 }
 
+.formContainer {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactForm label {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.contactForm input,
+.contactForm select,
+.contactForm textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.contactForm textarea {
+  resize: vertical;
+}
+
+.contactForm input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.contactForm input[type="submit"] {
+  background-color: #7a3e18;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.contactForm input[type="submit"]:hover {
+  background-color: #5a2d0c;
+}
+
+footer {
+  background-color: #5a2d0c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .contactForm {
+    gap: 0.8rem;
+  }
+
+  .formContainer {
+    padding: 1.5rem 1rem;
+  }
+
+  .contactotitulo h2 {
+    font-size: 1.8rem;
+  }
+
+  .contactotitulo h3 {
+    font-size: 0.95rem;
+  }
+}
